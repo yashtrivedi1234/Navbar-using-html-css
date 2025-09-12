@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+      min-height: 100vh;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: linear-gradient(90deg, #4896ab 60%, #74c0fc 100%);
+      height: 70px;
+      padding: 0 40px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      margin-right: 40px;
+      letter-spacing: 1px;
+    }
+
+    /* Remove bullet points for all menu lists */
+    .menu, .menu ul, .menu ul ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .menu {
+      display: flex;
+      margin: 0;
+      flex: 1;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu > li > a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 0 18px;
+      line-height: 70px;
+      font-weight: 500;
+      transition: background 0.2s;
+      font-size: 1em;
+      letter-spacing: 0.5px;
+    }
+
+    .menu > li > a:hover, .menu > li:hover > a {
+      background: #328da8;
+    }
+
+    /* Dropdown Styles */
+    .dropdown, .dropdown2 {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 70px;
+      min-width: 220px;
+      background: #43a2c7;
+      border-radius: 7px;
+      box-shadow: 0 4px 24px 0 rgba(75, 90, 127, 0.12);
+      padding: 0;
+      z-index: 50;
+    }
+
+    .dropdown2 {
+      left: 100%;
+      top: 0;
+      min-width: 220px;
+    }
+
+    .menu li:hover > ul.dropdown,
+    .menu ul.dropdown li:hover > ul.dropdown2 {
+      display: block;
+    }
+
+    .dropdown li, .dropdown2 li {
+      position: relative;
+    }
+
+    .dropdown li a, .dropdown2 li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 24px;
+      display: block;
+      transition: background 0.18s;
+      font-size: 1.05em;
+      border-radius: 0;
+    }
+
+    .dropdown li a:hover, .dropdown2 li a:hover {
+      background: #3b90aa;
+    }
+
+    .menu ul.dropdown li {
+      border-bottom: 1px solid #4db6c7;
+    }
+
+    .menu ul.dropdown li:last-child {
+      border-bottom: none;
+    }
+
+    .menu > li > ul {
+      top: 70px;
+    }
+
+    .menu ul.dropdown2 {
+      top: 0;
+      left: 100%;
+      margin-left: 2px;
+    }
+
+    .arrow {
+      margin-left: 4px;
+      font-size: 0.8em;
+      vertical-align: middle;
+    }
+
+    /* Search icon */
+    .search-icon {
+      font-size: 1.1em;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 0 10px;
+      }
+      .logo {
+        margin: 20px 0 10px 0;
+      }
+      .menu {
+        flex-direction: column;
+        width: 100%;
+      }
+      .menu > li > a {
+        line-height: 1.5;
+        padding: 18px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <ul class="menu">
+      <li><a href="#">HOME</a></li>
+      <li>
+        <a href="#">HTML &amp; CSS <span class="arrow">&#x25BE;</span></a>
+        <ul class="dropdown">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Forms</a></li>
+          <li><a href="#">Card Design</a></li>
+          <li>
+            <a href="#">More <span class="arrow">&#x25B6;</span></a>
+            <ul class="dropdown2">
+              <li><a href="#">Neumorphism</a></li>
+              <li><a href="#">Pre-loader</a></li>
+              <li><a href="#">Glassmorphism</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">JAVASCRIPT <span class="arrow">&#x25BE;</span></a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#"><span class="search-icon">&#128269;</span></a></li>
+    </ul>
+  </nav>
+</body>
+</html>
