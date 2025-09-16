@@ -21,3 +21,9 @@ This project demonstrates how to design a navigation system with multi-level dro
 💻 Tech Stack
 	•	HTML5 – Structure
 	•	CSS3 – Styling & responsiveness
+
+📂 Project Structure
+├── index.html     # Main HTML file
+├── style.css      # Inline in index.html (can be separated if needed)
+└── README.md      # Project documentation
+
