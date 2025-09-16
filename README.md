@@ -6,11 +6,11 @@ This project demonstrates how to design a navigation system with multi-level dro
 ⸻
 
 📌 Features
-	•	🟢 Responsive design (works on desktop & mobile)
-	•	🎨 Gradient background styling
-	•	📂 Multi-level dropdown menus
-	•	🔍 Integrated search icon
-	•	✨ Clean and modern UI
+	-	🟢 Responsive design (works on desktop & mobile)
+	-	🎨 Gradient background styling
+	-	📂 Multi-level dropdown menus
+	-	🔍 Integrated search icon
+	-	✨ Clean and modern UI
 
 ⸻
 
@@ -19,11 +19,5 @@ This project demonstrates how to design a navigation system with multi-level dro
 ⸻
 
 💻 Tech Stack
-	•	HTML5 – Structure
-	•	CSS3 – Styling & responsiveness
-
-📂 Project Structure
-├── index.html     # Main HTML file
-├── style.css      # Inline in index.html (can be separated if needed)
-└── README.md      # Project documentation
-
+	-	HTML5 – Structure
+	-	CSS3 – Styling & responsiveness
